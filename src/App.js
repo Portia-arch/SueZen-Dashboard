@@ -1,4 +1,4 @@
-import { STATE_LOGIN, STATE_SIGNUP } from 'components/AuthForm';
+// import { STATE_LOGIN, STATE_SIGNUP } from 'components/AuthForm';
 import GAListener from 'components/GAListener';
 import { EmptyLayout, LayoutRoute, MainLayout } from 'components/Layout';
 import PageSpinner from 'components/PageSpinner';
@@ -35,7 +35,7 @@ class App extends React.Component {
       <BrowserRouter basename={getBasename()}>
         <GAListener>
           <Switch>
-            <LayoutRoute
+            {/* <LayoutRoute
               exact
               path="/login"
               layout={EmptyLayout}
@@ -50,7 +50,7 @@ class App extends React.Component {
               component={props => (
                 <AuthPage {...props} authState={STATE_SIGNUP} />
               )}
-            />
+            /> */}
 
             <MainLayout breakpoint={this.props.breakpoint}>
               <React.Suspense fallback={<PageSpinner />}>
