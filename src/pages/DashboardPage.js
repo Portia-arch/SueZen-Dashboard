@@ -1,11 +1,10 @@
-// import { AnnouncementCard, TodosCard } from 'components/Card';
-// import HorizontalAvatarList from 'components/HorizontalAvatarList';
-// import MapWithBubbles from 'components/MapWithBubbles';
+import { AnnouncementCard, TodosCard } from 'components/Card';
+import HorizontalAvatarList from 'components/HorizontalAvatarList';
+import MapWithBubbles from 'components/MapWithBubbles';
 import Page from 'components/Page';
-// import ProductMedia from 'components/ProductMedia';
-// import SupportTicket from 'components/SupportTicket';
-// import UserProgressTable from 'components/UserProgressTable';
-// import { IconWidget, NumberWidget } from 'components/Widget';
+import ProductMedia from 'components/ProductMedia';
+import SupportTicket from 'components/SupportTicket';
+import UserProgressTable from 'components/UserProgressTable';
 import { getStackLineChart, stackLineChartOptions } from 'demos/chartjs';
 import {
   avatarsData,
@@ -38,8 +37,6 @@ import {
   CardHeader,
   CardTitle,
   Col,
-  ListGroup,
-  ListGroupItem,
   Row,
 } from 'reactstrap';
 import { getColor } from 'utils/colors';
@@ -64,7 +61,7 @@ class DashboardPage extends React.Component {
           <Col lg="4" md="12" sm="12" xs="12">
             <AnnouncementCard
               color="gradient-secondary"
-              header="Announcement"
+              header="About"
               avatarSize={60}
               name="Jamy"
               date="1 hour ago"
@@ -80,3 +77,4 @@ class DashboardPage extends React.Component {
     );
   }
 }
+export default DashboardPage;
